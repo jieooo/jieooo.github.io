@@ -25,8 +25,10 @@
     <!-- meta -->
 
 
-<title>Tag: instruction | jieooo</title>
+<title>图片插入方法后续 | jieooo</title>
 
+
+    <meta name="keywords" content="illuatration">
 
 
 
@@ -39,6 +41,13 @@
  
 
     
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" >
+        
+            <link rel="stylesheet" id="hl-dark-theme" href="/css/highlight/dark.css" media="none">
+        
+    
+
     
     
 
@@ -115,54 +124,100 @@
 </header>
 
 
-    <div class="cover">
-        <div class="cover__logo">
-            
-                <h1>jieooo</h1>
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        图片插入方法后续
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2022/10/" class="post-meta__date button">2022-10-22</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+    <aside class="post-side">
+        <div class="post-side__toc">
             
         </div>
-        
-        
-            <div class="cover__intro">
-                <p>Hi, nice to meet you!</p>
- 
-            </div>
-        
-    </div>
-
-            
-
-    
-        <main class="main">
-            
-    <div class="post-list">
-        
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        部署hexo
-    </h2>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2022/10/" class="post-meta__date button">2022-10-22</a>
-    
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/instruction/" class="post-tags__link button"># instruction</a></div> 
-<a href="/2022/10/22/hexo/" class="post-entry__link">部署hexo</a>
-                </div>
-            
+    </aside>
+    <a class="btn-toc button" id="btn-toc" tabindex="0">
+        <svg viewBox="0 0 1024 1024" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M128 256h64V192H128zM320 256h576V192H320zM128 544h64v-64H128zM320 544h576v-64H320zM128 832h64v-64H128zM320 832h576v-64H320z" fill="currentColor"></path>
+        </svg>
+    </a>
+    <div class="toc-menus" id="toc-menus">
+        <div class="toc-title">Article Directory</div>
         
     </div>
-    
 
 
-        </main>
-    
+<article class="post post__with-toc content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <p>之前说过了如何插入图片，但在后续使用过程中发现了一些问题，需要修改一些文件，原因是图片插件太古老了，有点跟不上hexo的版本</p>
+<ul>
+<li>进入你博客的根目录，然后下面顺序找到<code>index.js</code>:<br><code>node_modules</code> –&gt; <code>hexo-asset-image</code> –&gt; <code>index.js</code></li>
+<li>用VS Code 或者 记事本打开 <code>index.js</code></li>
+<li>在第 58 行，可以找到这么一行代码：</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="variable language_">this</span>).<span class="title function_">attr</span>(<span class="string">&#x27;src&#x27;</span>, config.<span class="property">root</span> + link + src);</span><br></pre></td></tr></table></figure>
 
+<ul>
+<li>把这一行代码改成下面这样</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="variable language_">this</span>).<span class="title function_">attr</span>(<span class="string">&#x27;src&#x27;</span>, src);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>保存文件</li>
+</ul>
+
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2022-10-22</p></div> 
+    <div class="post-entry__tags"><a href="/tags/illuatration/" class="post-tags__link button"># illuatration</a></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2022/10/22/hexo/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            部署hexo
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
 
             <footer class="footer">
      
