@@ -167,7 +167,7 @@
     <div class="post__header"></div>
     <div class="post__content">
         <h1 id="Hexo中添加本地图片"><a href="#Hexo中添加本地图片" class="headerlink" title="Hexo中添加本地图片"></a>Hexo中添加本地图片</h1><h2 id="一、"><a href="#一、" class="headerlink" title="一、"></a>一、</h2><ol>
-<li><p>把主页配置文件<code>_config.yml</code> 里的<code>post_asset_folder</code>:这个选项设置为<code>true</code></p>
+<li><p>把主页配置文件<code>_config.yml</code> 里的<code>post_asset_folder:</code>这个选项设置为<code>true</code></p>
 </li>
 <li><p>在你的hexo目录下执行这样一句话<code>npm install hexo-asset-image --save</code>，这是下载安装一个可以上传本地图片的插件，来自dalao：</p>
 </li>
@@ -176,7 +176,7 @@
 <li><p>最后在<code>xxxx.md</code>中想引入图片时，先把图片复制到<code>xxxx</code>这个文件夹中，然后只需要在<code>xxxx.md</code>中按照markdown的格式引入图片：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![你想输入的替代文字](xxxx/图片名.jpg)</span><br></pre></td></tr></table></figure>
 
-<p>注意： xxxx是这个md文件的名字，也是同名文件夹的名字。只需要有文件夹名字即可，不需要有什么绝对路径。你想引入的图片就只需要放入xxxx这个文件夹内就好了，很像引用相对路径。</p>
+<p>注意： <code>xxxx</code>是这个md文件的名字，也是同名文件夹的名字。只需要有文件夹名字即可，不需要有什么绝对路径。你想引入的图片就只需要放入<code>xxxx</code>这个文件夹内就好了，很像引用相对路径。</p>
 </li>
 <li><p>最后检查一下，<code>hexo g</code>生成页面后，进入<code>public\2017\02\26\index.html</code>文件中查看相关字段，可以发现，html标签内的语句是 <code>img src=”2017/02/26/xxxx/图片名.jpg”</code> ，而不是 <code>img src=”xxxx/图片名.jpg</code> 。这很重要，关乎你的网页是否可以真正加载你想插入的图片。</p>
 </li>

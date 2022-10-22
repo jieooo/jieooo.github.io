@@ -168,19 +168,18 @@
     <div class="post__content">
         <p>之前说过了如何插入图片，但在后续使用过程中发现了一些问题，需要修改一些文件，原因是图片插件太古老了，有点跟不上hexo的版本</p>
 <ul>
-<li>进入你博客的根目录，然后下面顺序找到<code>index.js</code>:<br><code>node_modules</code> –&gt; <code>hexo-asset-image</code> –&gt; <code>index.js</code></li>
-<li>用VS Code 或者 记事本打开 <code>index.js</code></li>
-<li>在第 58 行，可以找到这么一行代码：</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="variable language_">this</span>).<span class="title function_">attr</span>(<span class="string">&#x27;src&#x27;</span>, config.<span class="property">root</span> + link + src);</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>把这一行代码改成下面这样</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="variable language_">this</span>).<span class="title function_">attr</span>(<span class="string">&#x27;src&#x27;</span>, src);</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>保存文件</li>
+<li><p>进入你博客的根目录，然后下面顺序找到<code>index.js</code>:<br><code>node_modules</code> –&gt; <code>hexo-asset-image</code> –&gt; <code>index.js</code></p>
+</li>
+<li><p>用VS Code 或者 记事本打开 <code>index.js</code></p>
+</li>
+<li><p>在第 <code>58</code> 行，可以找到这么一行代码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="variable language_">this</span>).<span class="title function_">attr</span>(<span class="string">&#x27;src&#x27;</span>, config.<span class="property">root</span> + link + src);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>把这一行代码改成下面这样</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="variable language_">this</span>).<span class="title function_">attr</span>(<span class="string">&#x27;src&#x27;</span>, src);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>保存文件</p>
+</li>
 </ul>
 
     </div>
