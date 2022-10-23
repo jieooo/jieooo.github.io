@@ -317,7 +317,7 @@
             (e = document.createElement("script")).src = 'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
             document.body.appendChild(e);
             e.onload = () => {
-                var valineConfig = {"appId":"uyYV1fbk2MFeMITrbqHtWfLX-gzGzoHsz","appKey":"vLvfH7burZeR1kCdYwMuhEms","placeholder":"输入QQ邮箱会自动获取QQ头像，网址可以不填","path":null,"avatar":null,"meta":["nick","mail","link"],"pageSize":null,"lang":null,"visitor":null,"highlight":null,"avatarForce":null,"recordIP":null,"serverURLs":null,"enableQQ":null,"requiredFields":["nick","mail"],"emojiCDN":null,"emojiMaps":null};
+                var valineConfig = {"appId":"uyYV1fbk2MFeMITrbqHtWfLX-gzGzoHsz","appKey":"vLvfH7burZeR1kCdYwMuhEms","placeholder":"输入QQ邮箱会自动获取QQ头像，网址可以不填","path":null,"avatar":null,"meta":["nick","mail","link"],"pageSize":null,"lang":null,"visitor":null,"highlight":null,"avatarForce":null,"recordIP":null,"serverURLs":null,"enableQQ":true,"requiredFields":["nick","mail"],"emojiCDN":null,"emojiMaps":null};
                 valineConfig.el = '#valine_container';
                 for (var i in valineConfig) {
                     if (valineConfig[i] === null) delete valineConfig[i];
