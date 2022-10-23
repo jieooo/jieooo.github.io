@@ -272,10 +272,10 @@
     
     
     
-    
-    
-    <div id="gitalk-container"></div>
+    <div id="valine_container" class="valine_thread"></div>
 
+    
+    
     
     
     
@@ -365,30 +365,19 @@
     
     
     
-
-    
-    
-    
     <script>
         function loadComment() {
-            let e, i;
-            (e = document.createElement("script")).src = 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js',
+            let e;
+            (e = document.createElement("script")).src = 'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
             document.body.appendChild(e);
             e.onload = () => {
-                var gitalk = new Gitalk({
-                    clientID: '88fafbb70ee7da15496a',
-                    clientSecret: '88925413c1cea2e09a5f9e98d7c420d3539935ea',
-                    repo: 'jieooo.github.io',
-                    owner: 'jieooo',
-                    admin: 'jieooo',
-                    id: window.location.pathname,
-                    distractionFreeMode: false
-                });
-                gitalk.render('gitalk-container');
+                var valineConfig = {"appId":"uyYV1fbk2MFeMITrbqHtWfLX-gzGzoHsz","appKey":"vLvfH7burZeR1kCdYwMuhEms","placeholder":null,"path":null,"avatar":null,"meta":["nick","mail","link"],"pageSize":null,"lang":null,"visitor":null,"highlight":null,"avatarForce":null,"recordIP":null,"serverURLs":null,"enableQQ":null,"requiredFields":["nick","mail"],"emojiCDN":null,"emojiMaps":null};
+                valineConfig.el = '#valine_container';
+                for (var i in valineConfig) {
+                    if (valineConfig[i] === null) delete valineConfig[i];
+                }
+                new Valine(valineConfig);
             };
-            (i = document.createElement("link")).rel = "stylesheet",
-            i.href = 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css',
-            document.head.appendChild(i);
         }
     
         var runningOnBrowser = typeof window !== "undefined";
@@ -410,6 +399,10 @@
         }, 1);
     </script>
 
+
+    
+    
+    
     
     
 
