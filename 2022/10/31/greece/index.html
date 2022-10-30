@@ -25,8 +25,10 @@
     <!-- meta -->
 
 
-<title>tags | jieooo</title>
+<title>greece符号 | jieooo</title>
 
+
+    <meta name="keywords" content="书写">
 
 
 
@@ -39,6 +41,13 @@
  
 
     
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" >
+        
+            <link rel="stylesheet" id="hl-dark-theme" href="/css/highlight/dark.css" media="none">
+        
+    
+
     
     
 
@@ -115,41 +124,106 @@
 </header>
 
 
-    <div class="cover">
-        <div class="cover__logo">
-            
-                <h1>jieooo</h1>
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        greece符号
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2022/10/" class="post-meta__date button">2022-10-31</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+    <aside class="post-side">
+        <div class="post-side__toc">
             
         </div>
-        
-        
-            <div class="cover__intro">
-                <p>Hi, nice to meet you!</p>
- 
-            </div>
+    </aside>
+    <a class="btn-toc button" id="btn-toc" tabindex="0">
+        <svg viewBox="0 0 1024 1024" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M128 256h64V192H128zM320 256h576V192H320zM128 544h64v-64H128zM320 544h576v-64H320zM128 832h64v-64H128zM320 832h576v-64H320z" fill="currentColor"></path>
+        </svg>
+    </a>
+    <div class="toc-menus" id="toc-menus">
+        <div class="toc-title">Article Directory</div>
         
     </div>
 
+
+<article class="post post__with-toc content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <p><img src="1.jpg"></p>
+<p><img src="2.jpg"></p>
+
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2022-10-31</p></div> 
+    <div class="post-entry__tags"><a href="/tags/%E4%B9%A6%E5%86%99/" class="post-tags__link button"># 书写</a></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
             
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2022/10/22/img2/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            图片插入方法后续
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+    <div class="post__comments post__with-toc content-card" id="comment">
+        
+    <h4>Comments</h4>
+    
+    
+    
+    <div id="valine_container" class="valine_thread"></div>
 
     
-        <main class="main tagscloud">
-            <a href="/tags/english/" style="font-size: 25.5px; color: #798090">english</a> <a href="/tags/illustration/" style="font-size: 35px; color: #454d5d">illustration</a> <a href="/tags/%E4%B9%A6%E5%86%99/" style="font-size: 16px; color: #acb3c2">书写</a>
-        </main>
-        <style>
-            .tagscloud a {
-                margin-right: 1em;
-                border-bottom: 1px solid #ACB3C2;
-                line-height: 65px;
-                white-space: nowrap;
-            }
-            .tagscloud a:hover {
-                border-bottom: 2px solid #454D5D;
-                text-decoration: none;
-            }
-        </style>
+    
+    
+    
+    
+    
+    
     
 
+
+    </div>
+
+
+
+</main>
 
             <footer class="footer">
      
@@ -220,6 +294,62 @@
 
  
 
+
+    
+
+    
+    
+    
+    <script>
+        function loadComment() {
+            let e;
+            (e = document.createElement("script")).src = 'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
+            document.body.appendChild(e);
+            e.onload = () => {
+                var valineConfig = {"appId":"uyYV1fbk2MFeMITrbqHtWfLX-gzGzoHsz","appKey":"vLvfH7burZeR1kCdYwMuhEms","placeholder":"网址可以不填","path":null,"avatar":null,"meta":["nick","mail","link"],"pageSize":null,"lang":null,"visitor":null,"highlight":null,"avatarForce":null,"recordIP":null,"serverURLs":null,"enableQQ":true,"requiredFields":["nick","mail"],"emojiCDN":null,"emojiMaps":null};
+                valineConfig.el = '#valine_container';
+                for (var i in valineConfig) {
+                    if (valineConfig[i] === null) delete valineConfig[i];
+                }
+                new Valine(valineConfig);
+            };
+        }
+    
+        var runningOnBrowser = typeof window !== "undefined";
+        var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+        var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+    
+        setTimeout(function () {
+            if (!isBot && supportsIntersectionObserver) {
+                var comment_observer = new IntersectionObserver(function(entries) {
+                    if (entries[0].isIntersecting) {
+                        loadComment();
+                        comment_observer.disconnect();
+                    }
+                }, { threshold: [0] });
+                comment_observer.observe(document.getElementById('comment'));
+            } else {
+                loadComment();
+            }
+        }, 1);
+    </script>
+
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
 
 
 
