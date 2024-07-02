@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+    
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>deploy | jieooo</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="前言由于我更新了Windows11系统，所以之前的hexo部署教程多了第一步一、win11系统禁止运行脚本，请尝试以下代码12get-executionpolicy -listset-executionpolicy -executionpolicy remotesigned -scope currentuser 二、安装git并与GitHub绑定12git config --global user">
+<meta property="og:type" content="article">
+<meta property="og:title" content="deploy">
+<meta property="og:url" content="http://example.com/2024/07/03/deploy/index.html">
+<meta property="og:site_name" content="jieooo">
+<meta property="og:description" content="前言由于我更新了Windows11系统，所以之前的hexo部署教程多了第一步一、win11系统禁止运行脚本，请尝试以下代码12get-executionpolicy -listset-executionpolicy -executionpolicy remotesigned -scope currentuser 二、安装git并与GitHub绑定12git config --global user">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-07-02T18:04:36.000Z">
+<meta property="article:modified_time" content="2024-07-02T19:09:54.418Z">
+<meta property="article:author" content="jieauf">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/highlight.css" media="none" onload="this.media='all'">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+    <body>
+        <div id="app" tabindex="-1">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">jieooo</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        deploy
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2024/07/" class="post-meta__date button">2024-07-03</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><h5 id="由于我更新了Windows11系统，所以之前的hexo部署教程多了第一步"><a href="#由于我更新了Windows11系统，所以之前的hexo部署教程多了第一步" class="headerlink" title="由于我更新了Windows11系统，所以之前的hexo部署教程多了第一步"></a>由于我更新了Windows11系统，所以之前的hexo部署教程多了第一步</h5><h5 id="一、win11系统禁止运行脚本，请尝试以下代码"><a href="#一、win11系统禁止运行脚本，请尝试以下代码" class="headerlink" title="一、win11系统禁止运行脚本，请尝试以下代码"></a>一、win11系统禁止运行脚本，请尝试以下代码</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">get-executionpolicy -list</span><br><span class="line">set-executionpolicy -executionpolicy remotesigned -scope currentuser</span><br></pre></td></tr></table></figure>
+<h5 id="二、安装git并与GitHub绑定"><a href="#二、安装git并与GitHub绑定" class="headerlink" title="二、安装git并与GitHub绑定"></a>二、安装git并与GitHub绑定</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;jieooo&quot; #你的Github用户名</span><br><span class="line">git config --global user.email &quot;3311528590&quot; #你的Github邮箱</span><br></pre></td></tr></table></figure>
+<h5 id="三、接着生成-ssh-密钥文件，输入如下命令后直接三次回车即可，一般不需要设置密码；"><a href="#三、接着生成-ssh-密钥文件，输入如下命令后直接三次回车即可，一般不需要设置密码；" class="headerlink" title="三、接着生成 ssh 密钥文件，输入如下命令后直接三次回车即可，一般不需要设置密码；"></a>三、接着生成 ssh 密钥文件，输入如下命令后直接三次回车即可，一般不需要设置密码；</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;3311528590@qq.com&quot; #你的GitHub邮箱</span><br></pre></td></tr></table></figure>
+<h5 id="四、一般执行上述命令之后，会生成-id-rsa-和-id-rsa-pub-两个文件，前者是我们私有的，而后者则是对外开放的。接着找到生成的-ssh-的文件夹中的-id-rsa-pub-密钥，将内容复制；"><a href="#四、一般执行上述命令之后，会生成-id-rsa-和-id-rsa-pub-两个文件，前者是我们私有的，而后者则是对外开放的。接着找到生成的-ssh-的文件夹中的-id-rsa-pub-密钥，将内容复制；" class="headerlink" title="四、一般执行上述命令之后，会生成 id_rsa 和 id_rsa.pub 两个文件，前者是我们私有的，而后者则是对外开放的。接着找到生成的 .ssh 的文件夹中的 id_rsa.pub 密钥，将内容复制；"></a>四、一般执行上述命令之后，会生成 id_rsa 和 id_rsa.pub 两个文件，前者是我们私有的，而后者则是对外开放的。接着找到生成的 .ssh 的文件夹中的 id_rsa.pub 密钥，将内容复制；</h5><h5 id="五、然后打开-GitHub-Settings-Keys-页面，创建一个新的-SSH-key，填写-Title-和-Key，Title-可以随意，而-Key-的内容则是我们刚才复制的-id-rsa-pub-中的内容，最后点击-Add-SSH-key-即可；-测试SSH链接-如果看到类似于“Hi-username-You’ve-successfully-authenticated-but-GitHub-does-not-provide-shell-access-”的消息，说明SSH设置成功。"><a href="#五、然后打开-GitHub-Settings-Keys-页面，创建一个新的-SSH-key，填写-Title-和-Key，Title-可以随意，而-Key-的内容则是我们刚才复制的-id-rsa-pub-中的内容，最后点击-Add-SSH-key-即可；-测试SSH链接-如果看到类似于“Hi-username-You’ve-successfully-authenticated-but-GitHub-does-not-provide-shell-access-”的消息，说明SSH设置成功。" class="headerlink" title="五、然后打开 GitHub-Settings-Keys 页面，创建一个新的 SSH key，填写 Title 和 Key，Title 可以随意，而 Key 的内容则是我们刚才复制的 id_rsa.pub 中的内容，最后点击 Add SSH key 即可； 测试SSH链接,如果看到类似于“Hi username! You’ve successfully authenticated, but GitHub does not provide shell access.”的消息，说明SSH设置成功。"></a>五、然后打开 GitHub-Settings-Keys 页面，创建一个新的 SSH key，填写 Title 和 Key，Title 可以随意，而 Key 的内容则是我们刚才复制的 id_rsa.pub 中的内容，最后点击 Add SSH key 即可； 测试SSH链接,如果看到类似于“Hi username! You’ve successfully authenticated, but GitHub does not provide shell access.”的消息，说明SSH设置成功。</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<h5 id="六、安装-nodejs-输入下面命令检验"><a href="#六、安装-nodejs-输入下面命令检验" class="headerlink" title="六、安装 nodejs 输入下面命令检验"></a>六、安装 nodejs 输入下面命令检验</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<h5 id="七、安装hexo-新建一个文件夹，不能是根目录，我为了方便就放到根目录，结果报错了。-然后进入该文件夹，并用如下命令进行初始化并安装必备组件；"><a href="#七、安装hexo-新建一个文件夹，不能是根目录，我为了方便就放到根目录，结果报错了。-然后进入该文件夹，并用如下命令进行初始化并安装必备组件；" class="headerlink" title="七、安装hexo 新建一个文件夹，不能是根目录，我为了方便就放到根目录，结果报错了。 然后进入该文件夹，并用如下命令进行初始化并安装必备组件；"></a>七、安装hexo 新建一个文件夹，不能是根目录，我为了方便就放到根目录，结果报错了。 然后进入该文件夹，并用如下命令进行初始化并安装必备组件；</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init .</span><br><span class="line">npm i hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h5 id="八、接着配置-config-yml-，设置为你的个人仓库名即可-最后安装-deployer-即可部署到GitHub上-其他使用说明见Hello-World"><a href="#八、接着配置-config-yml-，设置为你的个人仓库名即可-最后安装-deployer-即可部署到GitHub上-其他使用说明见Hello-World" class="headerlink" title="八、接着配置_config.yml ，设置为你的个人仓库名即可 最后安装 deployer 即可部署到GitHub上 其他使用说明见Hello World"></a>八、接着配置_config.yml ，设置为你的个人仓库名即可 最后安装 deployer 即可部署到GitHub上 其他使用说明见Hello World</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br><span class="line">git config --system http.sslverify false</span><br></pre></td></tr></table></figure>
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2024-07-03</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2022/10/21/img/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            图片插入方法
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2024 <a href="/">jieooo</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>
